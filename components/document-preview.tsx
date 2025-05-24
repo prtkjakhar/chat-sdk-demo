@@ -21,6 +21,7 @@ import { useArtifact } from '@/hooks/use-artifact';
 import equal from 'fast-deep-equal';
 import { SpreadsheetEditor } from './sheet-editor';
 import { ImageEditor } from './image-editor';
+import { LatexPreview } from '@/artifacts/latex/client';
 
 interface DocumentPreviewProps {
   isReadonly: boolean;
@@ -279,6 +280,8 @@ const DocumentContent = ({ document }: { document: Document }) => {
           status={artifact.status}
           isInline={true}
         />
+      ) : document.kind === 'latex' ? (
+        <LatexPreview content={document.content ?? ''} />
       ) : null}
     </div>
   );

@@ -16,6 +16,43 @@
 </p>
 <br/>
 
+# Chat SDK Demo with LaTeX Support
+
+This project demonstrates how to use the Vercel AI SDK to create a chat application with support for custom artifacts, including LaTeX mathematical formatting.
+
+## Documentation
+
+For a complete guide on how this works, see:
+
+- [Vercel Chat SDK Guide](./docs/vercel-chat-sdk-guide.md) - A comprehensive guide for using the Chat SDK and creating custom artifacts
+
+## Features
+
+- Real-time chat with AI using streaming responses
+- Multiple artifact types: text, code, image, spreadsheet, and LaTeX
+- Custom LaTeX artifact for mathematical notation
+- Integration with multiple LLM providers (OpenAI, Google's Gemini, etc.)
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `pnpm install`
+3. Set up environment variables (see `.env.example`)
+4. Run the development server: `pnpm dev`
+
+## Custom Artifacts
+
+This project includes a custom LaTeX artifact implementation that allows you to:
+
+- Generate LaTeX documents directly in the chat
+- Display proper mathematical notation
+- View real-time streaming of LaTeX content
+- Copy the generated LaTeX code to use elsewhere
+
+## License
+
+See the [LICENSE](LICENSE) file for details.
+
 ## Features
 
 - [Next.js](https://nextjs.org) App Router
